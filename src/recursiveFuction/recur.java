@@ -1,3 +1,5 @@
+package recursiveFuction;
+
 import java.util.Scanner;
 
 public class recur {
