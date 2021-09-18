@@ -12,12 +12,14 @@ public class num1463 {
             return d[n];
         }
         d[n] = go(n-1) + 1;
+        // i가 2로 나누어 떨어졌을 때
         if (n%2 == 0) {
             int temp = go(n/2)+1;
             if (d[n] > temp) {
                 d[n] = temp;
             }
         }
+        // i가 3으로 나누어 떨어졌을 때
         if (n%3 == 0) {
             int temp = go(n/3)+1;
             if (d[n] > temp) {
