@@ -17,5 +17,9 @@ public class prac1 {
         numbers.add(1, 50);
         System.out.println("\nadd(인덱스, 값)");
         System.out.println(numbers);
+
+        numbers.remove(2);
+        System.out.println("\nremove(인덱스, 값)");
+        System.out.println(numbers);
     }
 }
