@@ -1,22 +1,32 @@
 package sort;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class num2750 {
+public class num2750_selectionSort {
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] m = new int[n];
+        int[] arr = new int[n];
 
         for(int i = 0; i<n; i++) {
-            m[i] = sc.nextInt();
+            arr[i] = sc.nextInt();
         }
 
+        int temp = 0;
         for(int i = 0; i<n-1; i++) {
-            int min = 0;
-            for(int j = 1; i<n; i++) {
-                
+            int min = i;
+            for(int j = i+1; j<n; j++) {
+                if(arr[min] > arr[j]) {
+                    temp = arr[min];
+                    arr[min] = arr[j];
+                    arr[j] = temp;
+                }
             }
+        }
+        for(int i = 0; i<n; i++) {
+            System.out.println(arr[i]);
         }
     }
 }
