@@ -2,7 +2,7 @@ package bruteforce;
 
 import java.util.*;
 
-public class exam {
+public class exam_sol1 {
     public static void main(String[] args) {
         int[] answers = {1,2,3,4,5};
         System.out.println(Arrays.toString(solution(answers)));
@@ -17,6 +17,7 @@ public class exam {
 
         // 1. 사람마다 맞은 수 만큼 카운드 한다.
         int[] hit = new int[3];
+
         for(int personIdx = 0; personIdx < hit.length; personIdx++) {
             for(int probIdx = 0; probIdx < answers.length; probIdx++) {
                 // (innner루프 인덱스) % (outer루프 인덱스의 패턴 길이)

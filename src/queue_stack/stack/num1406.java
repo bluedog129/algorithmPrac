@@ -1,4 +1,4 @@
-package stack;
+package queue_stack.stack;
 
 import java.io.*;
 import java.util.*;
@@ -21,6 +21,7 @@ public class num1406 {
         while(m-- > 0) {
             String[] line = br.readLine().split(" ");
             char what = line[0].charAt(0);
+
             if (what == 'L') {
                 if (!left.empty()) {
                     right.push(left.pop());

@@ -1,7 +1,6 @@
-package stack;
+package queue_stack.stack;
 
 import java.io.*;
-import java.util.Scanner;
 import java.util.Stack;
 
 public class num17413 {

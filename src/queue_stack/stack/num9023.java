@@ -1,8 +1,6 @@
-package stack;
+package queue_stack.stack;
 
-import javax.imageio.IIOException;
 import java.io.*;
-import java.util.Scanner;
 import java.util.Stack;
 
 public class num9023 {
